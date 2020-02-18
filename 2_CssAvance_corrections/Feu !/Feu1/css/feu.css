@@ -1,0 +1,83 @@
+#feu{
+    width: 400px;
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    background-color:#000;
+    padding:30px 0;
+}
+.couleur{
+    width :175px;
+    height :175px;
+    border-radius:50%;
+    margin:auto;
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+    opacity:0.5;
+}
+#rouge{
+background-color:red;
+animation: rougeAnim 10s ease infinite;
+}
+#orange{
+    background-color: orange;
+    animation: orangeAnim 10s ease infinite;
+}
+#vert{
+    background-color:green;
+    animation: vertAnim 10s ease infinite;
+}
+/* Changements de couleurs */
+@keyframes rougeAnim {
+    0% {
+        opacity:1;
+    }
+    33%{
+        opacity:1;
+    }
+    34%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:0.5;
+    }
+}
+
+@keyframes orangeAnim {
+    0% {
+        opacity:0.5;
+    }
+    33%{
+        opacity:0.5;
+    }
+    34%{
+        opacity:1;
+    }
+    66% {
+        opacity:1;
+    }
+    67% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:0.5;
+    }
+}
+
+@keyframes vertAnim {
+    0% {
+        opacity:0.5;
+    }
+    66%{
+        opacity:0.5;
+    }
+    67%{
+        opacity:1;
+    }
+    99% {
+        opacity:1;
+    }
+    100% {
+        opacity:0.5;
+    }
+}

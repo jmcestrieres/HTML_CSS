@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style rel="stylesheet">
+        html, body, main{
+            width:100%;
+            height:100%;
+            padding:0;
+            margin:0;
+        }
+        main{
+        }
+        h2{
+            font-size:24px;
+        }
+        main > section{
+            width:100vw;
+            height:100vh;
+            display:flex;
+        }
+        main > section > section{
+            margin:auto;
+        }
+        main > header {
+            background-color:#315B8A;
+            position:fixed;
+            color:white;
+            width:100vw;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content: space-between;
+        }
+        main > header > nav > ul > li{
+            display:inline-block;
+        }
+        main > section:nth-child(1){
+            background-color:#C85B6C;
+        }
+        main > section:nth-child(2){
+            background-color:#FE7568;
+        }
+        main > section:nth-child(3){
+            background-color:#FCCA6C;
+        }
+        main > section:nth-child(4){
+            background-color:#548FCC;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="entete">
+                <h1>Mon CV d'à moi tout seul</h1>
+                <h2>Un truc avec du HTML propre et du CSS propre et du Javascript petit</h2>
+            </span>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#moi">C'est moi l'autocentré</a>
+                    </li>
+                    <li>
+                            <a href="#fait">Ce que j'ai fait</a>
+                        </li>
+                    <li>
+                            <a href="#faire">Ce que je sais faire</a>
+
+                    </li>
+                    <li>
+                            <a href="#coucou">On converse ?</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="moi">
+            <header>
+                <h3>Qui suis-je ?</h3>
+            </header>
+            <article>
+
+            </article>
+        </section>
+        <section id="fait">
+            <h3>Expérience</h3>
+            <aside>
+
+            </aside>
+            <article>
+
+            </article>
+        </section>
+        <section id="faire">
+            <h3>Compétences</h3>
+            <article>
+
+            </article>
+            <aside>
+
+            </aside>
+        </section>
+        <section id="coucou">
+            <section>
+                <h3>Contacts</h3>
+            </section>
+        </section>
+    </main>
+    <script type="text/javascript">
+        let premiereSection = document.getElementById("moi");
+
+        var variableExemple = document.querySelector("span.entete")
+        console.log("Coucou c'est mon CV", variableExemple);
+        console.log(document.getElementsByTagName("section"));
+    </script>
+</body>
+
+</html>
